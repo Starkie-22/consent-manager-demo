@@ -1,0 +1,33 @@
+.validate-token-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.token-input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.validate-button {
+  padding: 14px 20px;
+  background-color: #554ef1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.valid {
+  color: green;
+  margin-top: 20px;
+}
+
+.invalid {
+  color: red;
+  margin-top: 20px;
+}
