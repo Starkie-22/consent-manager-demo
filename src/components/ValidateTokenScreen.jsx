@@ -29,16 +29,18 @@ function ValidateTokenScreen() {
         <br />
         Paste this token below to validate
       </p>
-      <input
-        type="text"
-        placeholder="Paste your token here"
-        value={inputToken}
-        onChange={handleTokenChange}
-        className="token-input"
-      />
-      <button className="validate-button" onClick={handleValidateToken}>
-        Validate Token
-      </button>
+      <div className="token-container">
+        <input
+          type="text"
+          placeholder="Paste your token here"
+          value={inputToken}
+          onChange={handleTokenChange}
+          className="token-input"
+        />
+        <button className="validate-button" onClick={handleValidateToken}>
+          Validate Token
+        </button>
+      </div>
 
       {isValid !== null && (
         <p className={isValid ? "valid" : "invalid"}>
