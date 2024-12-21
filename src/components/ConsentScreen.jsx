@@ -134,6 +134,8 @@ function ConsentScreen() {
         </div>
       </div>
 
+      <hr className="divider" />
+
       <div className="terms-and-buttons">
         <p className="consent-terms">
           By clicking Allow, you allow the app to use your information in

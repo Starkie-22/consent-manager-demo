@@ -41,92 +41,90 @@ function InputForm() {
   }
 
   return (
-    <div>
-      <div className="input-container">
-        <p className="heading-2">
-          <b>Enter Consent Details</b>
-        </p>
-        <form onSubmit={handleSubmit} className="input-form">
-          <div className="input-set">
-            <label className="input-label" htmlFor="customer-id">
-              Customer ID
-            </label>
-            <input
-              id="customer-id"
-              className="details-input"
-              type="text"
-              name="customerId"
-              value={formData.customerId}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-set">
-            <label className="input-label" htmlFor="redirect-url">
-              Redirect URI
-            </label>
-            <input
-              id="redirect-url"
-              type="url"
-              className="details-input"
-              name="redirectUri"
-              value={formData.redirectUri}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-set">
-            <label className="input-label" htmlFor="policy-version">
-              Policy Version
-            </label>
-            <input
-              id="policy-version"
-              type="text"
-              className="details-input"
-              name="policyVersion"
-              value={formData.policyVersion}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-set">
-            <label className="input-label" htmlFor="purpose">
-              Purpose
-            </label>
-            <input
-              id="purpose"
-              type="text"
-              className="details-input"
-              name="purpose"
-              value={formData.purpose}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="input-set">
-            <label className="input-label" htmlFor="scope">
-              Scope
-            </label>
-            <input
-              id="scope"
-              type="text"
-              className="details-input"
-              name="scope"
-              value={formData.scope}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button
-            id="request-consent-button"
-            className="request-consent-button"
-            type="submit"
-            style={{ backgroundColor: buttonColor }}
-          >
-            Request Consent
-          </button>
-        </form>
-      </div>
+    <div className="input-container">
+      <p className="heading-2">
+        <b>Enter Consent Details</b>
+      </p>
+      <form onSubmit={handleSubmit} className="input-form">
+        <div className="input-set">
+          <label className="input-label" htmlFor="customer-id">
+            Customer ID
+          </label>
+          <input
+            id="customer-id"
+            className="details-input"
+            type="text"
+            name="customerId"
+            value={formData.customerId}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-set">
+          <label className="input-label" htmlFor="redirect-url">
+            Redirect URI
+          </label>
+          <input
+            id="redirect-url"
+            type="url"
+            className="details-input"
+            name="redirectUri"
+            value={formData.redirectUri}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-set">
+          <label className="input-label" htmlFor="policy-version">
+            Policy Version
+          </label>
+          <input
+            id="policy-version"
+            type="text"
+            className="details-input"
+            name="policyVersion"
+            value={formData.policyVersion}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-set">
+          <label className="input-label" htmlFor="purpose">
+            Purpose
+          </label>
+          <input
+            id="purpose"
+            type="text"
+            className="details-input"
+            name="purpose"
+            value={formData.purpose}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-set">
+          <label className="input-label" htmlFor="scope">
+            Scope
+          </label>
+          <input
+            id="scope"
+            type="text"
+            className="details-input"
+            name="scope"
+            value={formData.scope}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button
+          id="request-consent-button"
+          className="request-consent-button"
+          type="submit"
+          style={{ backgroundColor: buttonColor }}
+        >
+          Request Consent
+        </button>
+      </form>
     </div>
   );
 }

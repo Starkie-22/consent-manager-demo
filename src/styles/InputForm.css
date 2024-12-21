@@ -1,4 +1,5 @@
 .input-container {
+  margin-top: 78px;
   width: 567px;
   height: 438px;
   background-color: #ffffff;
@@ -48,6 +49,7 @@
   width: 317px;
   height: 36px;
   border-radius: 6px;
+  padding: 5.5px 16px;
 }
 
 .request-consent-button {
