@@ -1,0 +1,22 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  border: none;
+}
+
+Sidebar {
+  width: 280px;
+}
+
+.main-content {
+  position: fixed;
+  left: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: calc(100vw - 280px);
+  overflow-y: auto;
+}

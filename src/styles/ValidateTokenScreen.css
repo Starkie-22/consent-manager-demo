@@ -1,45 +1,119 @@
 .validate-token-container {
-  max-width: 600px;
-  padding: 20px;
-  text-align: center;
-  border: none;
-  margin: 50px auto;
+  width: 567px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  margin-top: 78px;
 }
 
 .token-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 36px;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 503px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.token-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(5, 5, 82, 0.6);
 }
 
 .token-input {
-  padding: 10px;
-  margin-top: 20px;
-  width: 400px;
-  font-size: 16px;
+  width: 408px;
+  height: 36px;
+  padding: 5.5px 12px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(217, 219, 221, 1);
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.token-input::placeholder {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .validate-button {
-  padding: 14px 20px;
+  height: 36px;
+  padding: 11.5px 16px;
   background-color: #554ef1;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  width: 400px;
+  width: 100%;
+  margin: 0;
 }
 
-.valid {
-  color: green;
-  margin-top: 20px;
+.consent-result {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
 }
 
-.invalid {
+.consent-result p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(5, 5, 82, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+}
+
+.result-accepted {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 102px;
+  height: 32px;
+  padding: 6px 12px 6px 8px;
+  border: 1px solid #006644;
+  background-color: #f0faf5;
+  border-radius: 6px;
+}
+
+.result-accepted p {
+  color: #006644;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.result-declined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 32px;
+  border: 1px solid red;
+  border-radius: 6px;
+}
+
+.result-declined p {
   color: red;
-  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
 }

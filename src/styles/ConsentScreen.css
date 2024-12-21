@@ -1,107 +1,194 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
 .consent-container {
-  padding: 20px;
-  max-width: 600px;
-  height: 80vh;
-  margin: 50px auto;
+  width: 567px;
+  height: 651px;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid #e6e6e6;
+  margin-top: 78px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-bottom: 20px;
-  line-height: 10px;
+  width: 567px;
+  height: 96px;
+  gap: 20px;
+  padding: 24px 32px;
 }
 
-.company-logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  filter: invert(1);
+.consent-request-company {
+  width: 88.8px;
+  height: 48px;
+}
+
+.customer-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 394.2px;
+  height: 46px;
+  gap: 4px;
 }
 
 .user-email {
   font-size: 16px;
-  color: #333;
-  line-height: 10px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+  color: rgba(5, 5, 82, 0.8);
 }
 
 .policy-version {
   font-size: 14px;
   color: #666;
-  line-height: 10px;
+  margin: 0;
 }
 
 .divider {
-  margin: 15px 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(5, 5, 82, 0.1);
+}
+
+.content-box-1 {
+  width: 567px;
+  height: 409px;
+  padding: 24px 32px;
+}
+
+.content-box-2 {
+  width: 495px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.checkbox-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+  height: 87px;
+  gap: 12px;
 }
 
 .description {
   font-size: 16px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.checkbox-section {
-  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(5, 5, 82, 0.8);
+  margin: 0;
 }
 
 .checkbox-section label {
-  display: block;
-  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
+  font-weight: 500;
+  text-align: left;
   color: rgba(5, 5, 82, 0.6);
 }
 
 .purposes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 12px;
+  width: 100%;
+  height: 87px;
+}
+
+.purpose-heading {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(5, 5, 82, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.purpose-para {
+  width: 100%;
+  text-align: left;
   font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
   color: rgba(5, 5, 82, 0.6);
-  margin-bottom: 20px;
 }
 
-.purposes strong {
-  color: #333;
+.terms-and-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 146px;
+  padding: 24px 32px;
 }
 
-.consent-info {
+.consent-terms {
+  font-family: "Roboto", "Inter";
   font-size: 14px;
-  color: #666;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  line-height: 21px;
+  width: 100%;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  color: #414141;
 }
 
-.consent-info span {
-  color: rgba(5, 5, 82, 0.6);
+.consent-terms span {
+  color: #554ef1;
 }
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .deny-button,
 .allow-button {
-  padding: 12px 20px;
+  padding: 11.5px 16px;
   font-size: 14px;
   font-weight: 500;
-  border: none;
-  border-radius: 5px;
+  text-align: center;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s;
-  width: 48%;
+  width: 245.5px;
+  height: 36px;
 }
 
 .deny-button {
-  background-color: white;
-  color: black;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #444444;
+  border: 1px solid #d9dbdd;
 }
 
 .allow-button {
-  background-color: #554ef1;
   color: white;
+  border: none;
 }
