@@ -36,21 +36,21 @@ function ConsentScreen() {
     } else {
       navigate("/validate-token");
     }
-    // const consentData = {
-    //   customerId: formData?.customerId || "johndoe@gmail.com",
-    //   redirectUri: formData?.redirectUri || "http://google.com/redirect",
-    //   transactionId: formData?.transactionId || sdk.uuidv4(),
-    //   policyVersion: formData?.policyVersion || "1.0",
-    //   refUri: formData?.refUri || "http://google.com/ref",
-    //   text: "Consent to access your data",
-    //   code: "12345678",
-    //   scope: {
-    //     contactInfo: consentDetails.contactInfo,
-    //     email: consentDetails.email,
-    //     phoneNumber: consentDetails.phoneNumber,
-    //     address: consentDetails.address,
-    //   },
-    // };
+    const consentData = {
+      customerId: formData?.customerId || "johndoe@gmail.com",
+      redirectUri: formData?.redirectUri || "http://google.com/redirect",
+      transactionId: formData?.transactionId || sdk.uuidv4(),
+      policyVersion: formData?.policyVersion || "1.0",
+      refUri: formData?.refUri || "http://google.com/ref",
+      text: "Consent to access your data",
+      code: "12345678",
+      scope: {
+        contactInfo: consentDetails.contactInfo,
+        email: consentDetails.email,
+        phoneNumber: consentDetails.phoneNumber,
+        address: consentDetails.address,
+      },
+    };
 
     // try {
     //   const response = await sdk.requestConsent(
